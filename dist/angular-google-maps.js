@@ -4352,7 +4352,8 @@ angular.module('google-maps')
                     center: new google.maps.LatLng(scope.center.latitude, scope.center.longitude),
                     draggable: isTrue(attrs.draggable),
                     zoom: scope.zoom,
-                    bounds: scope.bounds
+                    bounds: scope.bounds,
+                    scrollwheel: false
                 }));
 
                 var dragging = false;
